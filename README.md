@@ -10,7 +10,7 @@ I am challenging myself to use/learn a different language for each day (and prob
 | --- | ------------------- |
 | 1   | Dyalog APL / Python |
 | 2   | Bash / Python       |
-| 3   |                     |
+| 3   | Python              |
 | 4   |                     |
 | 5   |                     |
 | 6   |                     |
