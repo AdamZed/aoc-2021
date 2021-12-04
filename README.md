@@ -4,13 +4,12 @@ My solutions for **[Advent of Code 2021](https://adventofcode.com/2021)**.
 
 I am challenging myself to use/learn a different language for each day (and probably also solve each in Python).
 
-
-## Languages 
+## Languages
 
 | Day | Language            |
 | --- | ------------------- |
 | 1   | Dyalog APL / Python |
-| 2   |                     |
+| 2   | Bash / Python       |
 | 3   |                     |
 | 4   |                     |
 | 5   |                     |
