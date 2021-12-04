@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 depth=0; pos=0;
 while read line; do
   entry=($line)
