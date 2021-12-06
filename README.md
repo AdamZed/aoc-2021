@@ -6,13 +6,13 @@ I am challenging myself to use/learn a different language for each day (and prob
 
 ## Languages
 
-| Day | Language            |
+| Day | Language(s)         |
 | --- | ------------------- |
 | 1   | Dyalog APL / Python |
 | 2   | Bash / Python       |
 | 3   | Python              |
-| 4   |                     |
-| 5   |                     |
+| 4   | TBD / Python        |
+| 5   | TBD / Python        |
 | 6   |                     |
 | 7   |                     |
 | 8   |                     |
