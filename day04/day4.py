@@ -12,15 +12,15 @@ def mark(board, call):
 
 def part1(calls, boards):
     for call in calls:
-        for i in range(len(boards)):
-            mark(boards[i], call)
-            if check_bingo(boards[i]):
-                return score(boards[i], call)
+        for board in boards:
+            mark(board, call)
+            if check_bingo(board):
+                return score(board, call)
 
 def part2(calls, boards):
     for call in calls:
-        for i in range(len(boards)):
-            mark(boards[i], call)
+        for board in boards:
+            mark(board, call)
         if len(boards) > 1:
             boards = [board for board in boards if not check_bingo(board)]
         elif check_bingo(boards[0]): return score(boards[0], call)

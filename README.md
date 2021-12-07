@@ -11,7 +11,7 @@ I am challenging myself to use/learn a different language for each day (and prob
 | 1   | Dyalog APL / Python |
 | 2   | Bash / Python       |
 | 3   | Python              |
-| 4   | TBD / Python        |
+| 4   | Java / Python       |
 | 5   | TBD / Python        |
 | 6   | TBD / Python        |
 | 7   |                     |
