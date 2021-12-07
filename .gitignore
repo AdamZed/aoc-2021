@@ -1,5 +1,9 @@
+#misc
 **/.DS_Store
+
+#compiled files
 **/__pycache__
+**/day6bin
 
 **/input.txt
 **/sample.txt

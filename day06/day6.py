@@ -1,5 +1,4 @@
 from collections import Counter
-from copy import copy
 
 def reproduce(data, days):
     spawns = [(k,v) for k,v in Counter(data).items()]

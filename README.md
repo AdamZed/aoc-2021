@@ -12,9 +12,9 @@ I am challenging myself to use/learn a different language for each day (and prob
 | 2   | Bash / Python       |
 | 3   | Python              |
 | 4   | Java / Python       |
-| 5   | TBD / Python        |
-| 6   | TBD / Python        |
-| 7   |                     |
+| 5   | JavaScript / Python |
+| 6   | Fortran / Python    |
+| 7   | TBD / Python        |
 | 8   |                     |
 | 9   |                     |
 | 10  |                     |
