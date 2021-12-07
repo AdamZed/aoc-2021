@@ -13,7 +13,7 @@ I am challenging myself to use/learn a different language for each day (and prob
 | 3   | Python              |
 | 4   | TBD / Python        |
 | 5   | TBD / Python        |
-| 6   |                     |
+| 6   | TBD / Python        |
 | 7   |                     |
 | 8   |                     |
 | 9   |                     |

@@ -2,3 +2,6 @@
 **/__pycache__
 
 **/input.txt
+
+# private
+.aoc_session.sh
