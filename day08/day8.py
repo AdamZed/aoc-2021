@@ -17,13 +17,7 @@ def isct(s1, s2):
     return ''.join(c for c in s1 if c in s2)
 
 def getBaseFour(data):
-    nums = {}
-    for ent in data:
-        if ent in nums.keys(): continue
-        if len(ent) in BASE_MAP.keys():
-            nums[ent] = BASE_MAP[len(ent)]
-        if len(nums) == 4: break
-    return nums
+    return {ent:BASE_MAP[len(ent)] for ent in data if len(ent) in BASE_MAP.keys()}
 
 def decode(inp):
     nums = getBaseFour(strsrt(e) for e in inp)
