@@ -1,10 +1,8 @@
 def part1(data):
-    bits = [str(int(sum(y) > len(data)/2))
+    gamma = [str(int(sum(y) > len(data)/2))
             for y in zip(*[[int(x) for x in d] for d in data])]
-    bits2 = [str(int(x) ^ 1) for x in bits]
-    gamma = int(''.join(bits), 2)
-    epsilon = int(''.join(bits2), 2)
-    return gamma*epsilon
+    epsilon = [str(int(x) ^ 1) for x in gamma]
+    return int(''.join(gamma), 2) * int(''.join(epsilon), 2)
 
 def part2(data):
     def sonar(data, opp=False):
