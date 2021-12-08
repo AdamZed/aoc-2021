@@ -1,5 +1,6 @@
 import re
 from collections import defaultdict
+from math import copysign as sign
 
 def buildVents(data, blockDiag=True):
     vents = defaultdict(lambda:0)
@@ -7,8 +8,8 @@ def buildVents(data, blockDiag=True):
     for (a, b, x, y) in data:
         if blockDiag and a != x and b != y: continue
         i, j = a, b
-        xDir = 0 if a == x else (1 if a < x else -1)
-        yDir = 0 if b == y else (1 if b < y else -1)
+        xDir = int(sign(1, x-a)) if x != a else 0
+        yDir = int(sign(1, y-b)) if y != b else 0
         while i != x or j != y:
             vents[(i,j)] += 1
             i, j = i+xDir, j+yDir

@@ -1,17 +1,13 @@
 const { readFileSync } = require("fs");
 
-const clamp = (val, mn, mx) => {
-  return Math.max(mn, Math.min(val, mx));
-};
-
 const buildVents = (data, blockDiag = true) => {
   vents = {};
   data.forEach(([a, b, x, y]) => {
     if (blockDiag && a != x && b != y) return;
     let i = a,
       j = b;
-    const xDir = clamp(x - a, -1, 1);
-    const yDir = clamp(y - b, -1, 1);
+    const xDir = Math.sign(x - a);
+    const yDir = Math.sign(y - b);
     while (i != x || j != y) {
       const k = `${i},${j}`;
       if (!(k in vents)) vents[k] = 0;
