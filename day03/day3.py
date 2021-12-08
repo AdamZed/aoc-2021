@@ -7,12 +7,12 @@ def part1(data):
 def part2(data):
     def sonar(data, opp=False):
         a, b = ('0', '1') if opp else ('1', '0')
-        bits = [0] * len(data[0])
-        for i in range(len(bits)):
-            for bit in data:
-                bits[i] += int(bit[i])
-            bits[i] = a if bits[i] >= len(data)/2 else b
-            data = [x for x in data if x[i] == bits[i]]
+        for i in range(len(data[0])):
+            goal = 0
+            for chunk in data:
+                goal += int(chunk[i])
+            goal = a if goal >= len(data)/2 else b
+            data = [x for x in data if x[i] == goal]
             if len(data) == 1: break
         return int(data[0], 2)
     return sonar(data) * sonar(data, True)

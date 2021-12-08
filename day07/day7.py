@@ -1,8 +1,15 @@
+from math import floor, ceil
+
 def part1(data):
-    return min([sum([abs(y-x) for y in data]) for x in range(min(data), max(data)+1)])
+    med = sorted(data)[len(data)//2]
+    return sum(abs(y-med) for y in data)
 
 def part2(data):
-    return min([sum([(z := abs(y-x))*(z+1)//2 for y in data]) for x in range(min(data), max(data)+1)])
+    avg = sum(data)/len(data)
+    return min(
+        sum((dx := abs(y-floor(avg)))*(dx+1)//2 for y in data),
+        sum((dx := abs(y-ceil(avg)))*(dx+1)//2 for y in data),
+    )
 
 def main():
     with open('input.txt') as f:

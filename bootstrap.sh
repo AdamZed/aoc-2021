@@ -26,3 +26,4 @@ if [[ ! -f "$daydir/input.txt" ]]; then
 fi
 
 touch "$daydir/sample.txt"
+cp template.py "$daydir/day$day.py"
