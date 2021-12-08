@@ -6,9 +6,6 @@ BASE_MAP = {2: 1,  3: 7,  4: 4,  7: 8}
 # 0 => 6, 6 => 6, 9 => 6
 # 8 => 7
 
-def part1(data):
-    return sum(sum(1 for ent in out if len(ent) in BASE_MAP.keys()) for _,out in data)
-
 def strsrt(s):
     return ''.join(sorted(s))
 
@@ -36,6 +33,9 @@ def decode(inp):
 def numerize(out, decoded):
     return sum(10**(3-i) * decoded[strsrt(n)] for i,n in enumerate(out))
 
+def part1(data):
+    return sum(sum(1 for ent in out if len(ent) in BASE_MAP.keys()) for _,out in data)
+    
 def part2(data):
     return sum(numerize(out, decode(inp)) for inp,out in data)
 

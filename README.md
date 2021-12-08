@@ -15,7 +15,7 @@ I am challenging myself to use/learn a different language for each day (and prob
 | 5   | JavaScript / Python |
 | 6   | Fortran / Python    |
 | 7   | Dart / Python       |
-| 8   | TBD / Python        |
+| 8   | Elixir / Python     |
 | 9   |                     |
 | 10  |                     |
 | 11  |                     |

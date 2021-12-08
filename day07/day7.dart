@@ -30,7 +30,7 @@ int part2(List<int> data) {
           .floor());
 }
 
-Future<void> main() async {
+void main() async {
   if (Directory.current.path.endsWith('aoc-2021'))
     Directory.current = Directory.current.path + '/day07';
 
