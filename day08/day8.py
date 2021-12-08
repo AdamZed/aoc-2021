@@ -1,4 +1,3 @@
-from functools import reduce
 BASE_MAP = {2: 1,  3: 7,  4: 4,  7: 8}
 # 1 => 2
 # 7 => 3
