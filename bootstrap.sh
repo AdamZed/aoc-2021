@@ -1,11 +1,11 @@
 set -e
 
-if [[ -f "bootstrap.sh" ]]; then
-    echo "Please run from same directory"
+if [[ ! -f "bootstrap.sh" ]]; then
+    echo "Please run from within AoC directory"
 fi
 
 if [[ -z ${1} ]]; then
-    echo 'Supply day'
+    echo 'Please supply the day'
     exit
 fi
 
