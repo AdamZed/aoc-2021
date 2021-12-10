@@ -9,7 +9,7 @@ BASE_MAP = {2: 1,  3: 7,  4: 4,  7: 8}
 def strsrt(s):
     return ''.join(sorted(s))
 
-def isct(s1, s2):
+def isct_len(s1, s2):
     return ''.join(c for c in s1 if c in s2)
 
 def getBaseFour(data):
@@ -21,12 +21,12 @@ def decode(inp):
     for ent in inp:
         ent = strsrt(ent)
         if len(ent) == 5:
-            if len(isct(lets[1], ent)) == 2: nums[ent] = 3
-            elif len(isct(lets[4], ent)) == 3: nums[ent] = 5
+            if isct_len(lets[1], ent) == 2: nums[ent] = 3
+            elif isct_len(lets[4], ent) == 3: nums[ent] = 5
             else: nums[ent] = 2
         elif len(ent) == 6:
-            if len(isct(lets[1], ent)) != 2: nums[ent] = 6
-            elif len(isct(lets[4], ent)) == 4: nums[ent] = 9
+            if isct_len(lets[1], ent) != 2: nums[ent] = 6
+            elif isct_len(lets[4], ent) == 4: nums[ent] = 9
             else: nums[ent] = 0
     return nums
 

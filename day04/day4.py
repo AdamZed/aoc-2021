@@ -1,6 +1,6 @@
 def check_bingo(board):
     checks = board + [[board[y][x] for y in range(len(board))] for x in range(len(board))]
-    return any(sum(checks[i]) == -5 for i in range(len(checks)))
+    return any(sum(row) == -5 for row in checks)
 
 def score(board, call):
     return sum(map(sum, [filter(lambda x: x > 0, row) for row in board])) * call
