@@ -20,7 +20,7 @@ Sometimes I try to code golf my Python code a bit, please forgive me.
 | 9   |                 | ✓      |
 | 10  |                 | ✓      |
 | 11  |                 | ✓      |
-| 12  |                 |        |
+| 12  |                 | ✓      |
 | 13  |                 |        |
 | 14  |                 |        |
 | 15  |                 |        |
