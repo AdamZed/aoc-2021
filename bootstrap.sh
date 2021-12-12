@@ -23,16 +23,19 @@ fi
 daydir="day$hday"
 if [[ ! -d "$daydir" ]]; then
     mkdir $daydir
+    echo "Created directory $daydir"
 fi
 
 if [[ ! -f "$daydir/input.txt" ]]; then
     curl -s https://adventofcode.com/$year/day/$day/input \
         --cookie "session=$AOC_SESSION" \
         -o "$daydir/input.txt"
+    echo "Downloaded input file"
 fi
 
 touch "$daydir/sample.txt"
 
 if [[ ! -f "$daydir/day$day.py" ]]; then
     cp template.py "$daydir/day$day.py"
+    echo "Copied Python template"
 fi
