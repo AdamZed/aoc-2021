@@ -21,7 +21,7 @@ Sometimes I try to code golf my Python code a bit, please forgive me.
 | 10  |                 | ✓      |
 | 11  |                 | ✓      |
 | 12  |                 | ✓      |
-| 13  |                 |        |
+| 13  |                 | ✓      |
 | 14  |                 | ✓      |
 | 15  |                 |        |
 | 16  |                 |        |
