@@ -24,8 +24,8 @@ def ucs_cost(data, GOAL):
         x, y = node
         if (x, y) == GOAL: return cost
         for _node in children(GOAL, node):
-            (x1, y1) = _node
-            _cost = cost + cost_of(data, x1, y1)
+            (_x, _y) = _node
+            _cost = cost + cost_of(data, _x, _y)
             if _node in bestcosts and bestcosts[_node] <= _cost: continue
             bestcosts[_node] = _cost
             heapq.heappush(q, (_cost, _node))
