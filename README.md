@@ -24,8 +24,8 @@ Sometimes I try to code golf my Python code a bit, please forgive me.
 | 13  |                 | ✓      |
 | 14  |                 | ✓      |
 | 15  |                 | ✓      |
-| 16  |                 |        |
-| 17  |                 |        |
+| 16  |                 | ✓      |
+| 17  |                 | ✓      |
 | 18  |                 |        |
 | 19  |                 |        |
 | 20  |                 |        |
