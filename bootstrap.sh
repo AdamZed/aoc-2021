@@ -3,7 +3,7 @@
 set -e
 
 if [[ ! -f "bootstrap.sh" ]]; then
-    echo "Please run from within AoC directory"
+    echo "Please run from within root of AoC directory"
 fi
 
 if [[ -z ${1} ]]; then

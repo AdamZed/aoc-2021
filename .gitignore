@@ -1,10 +1,11 @@
-#misc
+# misc
 **/.DS_Store
 
-#compiled files
+# compiled files
 **/__pycache__
-**/day6bin
+**/*.o
 
+# input files
 **/input.txt
 **/sample.txt
 
